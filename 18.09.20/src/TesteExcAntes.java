@@ -1,6 +1,4 @@
-package excecoes;
-
-public class TesteExceptionAntes {
+public class TesteExcAntes {
 
 	public static void main(String[] args) {
 		System.out.println("Início do método main()");
