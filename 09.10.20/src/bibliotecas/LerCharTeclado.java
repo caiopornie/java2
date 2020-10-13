@@ -11,10 +11,12 @@ public class LerCharTeclado {
 		System.out.println("Digite uma tecla: ");
 		
 		InputStream is = System.in; 
-			//InputStream captura um byte
+			//InputStream captura byte
 			//recebendo a entrada padrao do sistema
 			
 		InputStreamReader isr = new InputStreamReader(is);
+		//InputStreamReader lê InputStream como char
+		
 		char c = 0;
 		try {
 			c = (char)isr.read();
