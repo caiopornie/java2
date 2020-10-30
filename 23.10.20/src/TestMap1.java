@@ -22,8 +22,9 @@ public class TestMap1 {
 		mapContas.put("cliente1", c2);
 		mapContas.put("cliente1", c3);
 	
-		Conta contaRecuperada = mapContas.get("cliente2");
+		Conta contaRecuperada = mapContas.get("cliente1");
 		System.out.println(contaRecuperada);
+		
 		System.out.println(contaRecuperada.getNome());
 		System.out.println(contaRecuperada.getLimite());
 		System.out.println(contaRecuperada.getSaldo());

@@ -10,8 +10,8 @@ public class TestSet {
 		objetos.add("objeto3");
 		objetos.add("objeto2");
 		objetos.add("objeto1");
-		System.out.println(objetos+"\n");
-		System.out.println(objetos.size());
+		System.out.println(objetos);
+		System.out.println("Numero de objetos: "+objetos.size());
 		
 		for (Object object : objetos) {
 			System.out.println(object);
