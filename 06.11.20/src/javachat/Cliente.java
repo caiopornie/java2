@@ -8,8 +8,8 @@ import java.util.Scanner;
 public class Cliente {
 	
 	public static void main(String[] args) {
-		try {			
-		
+		try {
+			
 			Socket cliente = new Socket("127.0.0.1", 10000);
 			System.out.println("Cliente conectado ao servidor");
 			
