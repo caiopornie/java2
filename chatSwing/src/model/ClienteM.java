@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class ClienteM {
 	
-	public static Boolean run(){
+	public static void run(){
 		try {
 			
 			Socket cliente = new Socket("127.0.0.1", 10000);
@@ -26,11 +26,8 @@ public class ClienteM {
 			 */
 			cliente.close();
 			
-			return true;
-			
 		}catch (IOException e) {
 			e.printStackTrace();
-			return false;
 		}
 	}
 

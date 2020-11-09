@@ -15,8 +15,8 @@ public class Main {
 		
 		ServidorV servV = new ServidorV();
 		ClienteV cliV = new ClienteV();
-		servV.setVisible(true);
-		//cliV.setVisible(true);
+		//servV.setVisible(true);
+		cliV.setVisible(true);
 		
 	}
 

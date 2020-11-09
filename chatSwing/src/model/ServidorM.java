@@ -6,31 +6,26 @@ import java.net.Socket;
 import java.util.Scanner;
 
 public class ServidorM {
-	public static Boolean run(){
+	public static void run(){
 		try {
 			ServerSocket server = new ServerSocket(10000);
-			//System.out.println("Porta 10.000 aberta");
+			System.out.println("Porta 10.000 aberta");
 		
 			Socket cliente = server.accept();
 			System.out.println("Conexão do cliente "+cliente.getInetAddress().getHostAddress());
 			
-			/*
 			Scanner leitor = new Scanner(cliente.getInputStream());
 			while (leitor.hasNextLine()) {
 				System.out.println(leitor.nextLine());
 			}
-			*/
 			
-			//leitor.close();
+			leitor.close();
 			cliente.close();
 			server.close();
-			
-			return true;
 			
 		}catch (IOException e){
 			e.printStackTrace();
 			
-			return false;
 		}
 	}
 }
